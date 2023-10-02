@@ -1,0 +1,31 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(78, 78, 78);
+    height: 100%;
+}
+
+.link {
+    color: rgb(13, 150, 36);
+    text-decoration: wavy;
+}
+
+h1 {
+    padding-top: 5%;
+    font-size: xx-large;
+    font-weight: 700;
+    color: rgb(13, 150, 36);
+}
+
+h3{
+    text-align: center;
+}
+.pics{
+    padding: 2%;
+}
+footer {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: flex-end;
+    color: #fff;
+    margin-top: 150px;
+}
