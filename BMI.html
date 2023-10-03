@@ -1,6 +1,9 @@
 <html>
+
 <head>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 
 <h1 style="text-align: center;">
@@ -8,18 +11,29 @@
 </h1>
 
 <h2>
-<form action="submit.php" method="post">
-    <label for="myText">Enter your weight in pounds:</label>
-    <input type="text" name="myText" id="myText">
-    <input type="submit" value="Submit">
-</form>
+<form onsubmit="return false">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" value="Ethan Hunt"><br>
 
-<form action="submit.php" method="post">
-    <label for="myText">Enter your height in inches(Ex: for 5'10" = 70 ):</label>
-    <input type="text" name="myText" id="myText">
-    <input type="submit" value="Submit">
-</form>
+    <select name="countries" id="countries">
+        <option value="India">India</option>
+        <option value="Germany">Germany</option>
+        <option value="Netherlands">Netherlands</option>
+    </select>
+
+    <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
+
+
+</form> 
+
+<p>Output:</p>
+<p> id = 'output' </p>
+
 </h2>
+
+<py-script>
+
+</py-script>
 
 <footer>
     <a href="main.html" class="link">Return to main page</a>
