@@ -29,3 +29,10 @@ footer {
     color: #fff;
     margin-top: 150px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-gap: 10px; /* Gap between grid items */
+    margin-top: 50px;
+}

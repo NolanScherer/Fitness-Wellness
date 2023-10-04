@@ -2,41 +2,31 @@
 
 <head>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <title>Number Manipulation Form</title>
 </head>
 
-<h1 style="text-align: center;">
-    Enter in information below to calculate your body mass index (BMI)
-</h1>
+<body>
+    <h1 style="text-align: center;">Enter in your Height and Weight</h1>
+    <div class="grid-container">
+        <input type="number" id="Weight" class="text-box" placeholder="Weight (in lbs)">
+        <input type="number" id="Height" class="text-box" placeholder="Height (in inches)">
+        <input type="button" value="Calculate" onclick="calculateBMI()" style="color: rgb(13, 150, 36);">
+        <p id="result"></p>
+    </div>
+</body>
 
-<h2>
-<form onsubmit="return false">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" value="Ethan Hunt"><br>
+<script>
+    function calculateBMI() {
+        let Weight = document.getElementById('Weight').value;
+        let Height = document.getElementById('Height').value;
 
-    <select name="countries" id="countries">
-        <option value="India">India</option>
-        <option value="Germany">Germany</option>
-        <option value="Netherlands">Netherlands</option>
-    </select>
+        let BMI = Weight * Height;
 
-    <input pys-onClick="sub" type="submit" id="btn-form" value="submit">
-
-
-</form> 
-
-<p>Output:</p>
-<p> id = 'output' </p>
-
-</h2>
-
-<py-script>
-
-</py-script>
+        document.getElementById('result').innerText = `Your Body Mass index is ${BMI.toFixed(2)}`;
+    }
+</script>
 
 <footer>
-    <a href="main.html" class="link">Return to main page</a>
+    <a href="main.html" class="link">Back to Home</a>
 </footer>
-
 </html>
