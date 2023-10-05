@@ -36,3 +36,7 @@ footer {
     grid-gap: 10px; /* Gap between grid items */
     margin-top: 50px;
 }
+
+.dropdowns {
+    margin-top: 10px;
+}
