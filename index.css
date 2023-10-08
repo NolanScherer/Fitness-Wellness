@@ -1,7 +1,6 @@
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(78, 78, 78);
-    height: 100%;
 }
 
 .link {
@@ -37,6 +36,11 @@ footer {
     margin-top: 50px;
 }
 
+.options{
+    color: rgb(13, 150, 36);
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .dropdowns {
     margin-top: 10px;
 }

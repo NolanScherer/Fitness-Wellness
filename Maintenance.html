@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <title>Number Manipulation Form</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Enter in your Height and Weight</h1>
+    <div class="grid-container">
+        <input style="font-size: 20px;" type="number" id="Weight" class="text-box" placeholder="Weight (in lbs)">
+        <div class="dropdowns">
+            <select name="Exercise" id="Exercise" class="options">
+                <option value="Sedentary">Sedentary (15 mins or less daily exercise)</option>
+                <option value="Light">Lightly active (1-2 hours exercise per week)</option>
+                <option value="Moderate">Moderately active (3-5 hours exercise per week)</option>
+                <option value="Very">Very active (6+ hours exercise per week)</option>
+            </select>
+        </div>
+        <input type="button" value="Calculate" onclick="calculateBMI()" style="color: rgb(13, 150, 36);">
+        <p id="ExerciseValue"></p>
+        <p id="result"></p>
+    </div>
+</body>
+
+<script>
+    function calculateBMI() {
+        const ranges = ["Sedentary","Light","Moderate","Very"]
+
+        let Weight = document.getElementById('Weight').value;
+        let Exercise = document.getElementById('Exercise').value;
+
+        // Calculate BMI here (for example)
+        let bmi = Weight * (12 + 1.5*ranges.indexOf(Exercise));
+
+        // Update the result paragraph
+        document.getElementById('result').innerText = `Your daily calorie intake for maintenence is ${bmi.toFixed(2)}`;
+    }
+</script>
+
+<footer>
+    <a href="main.html" class="link">Back to Home</a>
+</footer>
+
+</html>
